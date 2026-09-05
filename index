@@ -32,7 +32,7 @@
          <h1>Ashton Faith Reil | WDD 131 </h1>
         <nav class="flex-container">
            <h2>About Me</h2>
-            <div  class="flex-container">
+            <div  class="ab">
                 <img src="images/profile.jpeg" alt="Ashton Faith Reil" width="200"
                   height="auto">
             <p>Hello! My name is Ashton Faith Reil I am from California, Usa.</p><br>
@@ -44,7 +44,7 @@
          </nav>
       
        
-        <div class="flex-country">
+        <div class="ca">
 
             <img src="images/california.jpg" alt="California, Usa" width="200"
               height="auto">
@@ -66,7 +66,7 @@
          <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
          <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li> 
          <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
-         
+
         </ul>
    
 
@@ -76,6 +76,7 @@
 
 
     <footer>
+        <span id="currentYear">2026</span>
         <p>©2026 🌺 Ashton Faith Reil 🌺 California, Usa</p>
     </footer>
 </body>

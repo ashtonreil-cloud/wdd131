@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    width: 100%;
+    color: #000;
+}
+
+h1,
+h2 {
+    font-weight: 100;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin: 0;
+    width: 100%;
+}
+
+h2 {
+    background-color: #004D72;
+    width: 100%;
+    color: #fff;
+    line-height: 3rem;
+}
+
+p {
+    padding: 0;
+    margin: 1rem;
+}
+
+header {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header p {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#course-title {
+    font-size: 2rem;
+    color: #fff;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+    flex: 1 1 auto;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+.active {
+    color: rgb(199, 116, 27);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: auto auto / auto auto;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+main h1 {
+    grid-column: 1 / 4;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #00000033;
+    /* 1 */
+    padding: 0.25rem;
+    box-shadow: 0 0 30px #808080;
+    margin: 0.75rem
+}
+
+.img-ab {
+    float: right;
+}
+
+.img-ca {
+    float: left;
+}
+
+.card {
+    border: 1px solid #999;
+    padding: 2rem;
+}
+
+.ca{
+    grid-column: 1 / 3;
+}
+
+.ab {
+    grid-column: 3 / 4;
+    align-content: normal;
+}
+
+.ab,
+.ca {
+    border-radius: 1rem;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ab ul {
+    padding: 3rem 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+header,
+footer {
+    background-color: #9721b8;
+    color: #ff5bdc;
+}
