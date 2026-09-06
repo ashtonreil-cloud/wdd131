@@ -1,96 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="styles/base.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Ashton Faith Reil</title>
+    <meta name="description" content="Ashton Faith Reil, WDD 131 Student, Software Development, BYU">
+    <meta name="author" content="Ashton Faith Reil">
+    
+    <!-- Preconnect origins first for performance optimizing -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="scripts/getdates.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description"
-      content="Ashton Faith Reil, WDD 131 Student, Software Development, Byu">
-    <meta name="author" content="Ashton Faith Reil">
-    <title>WDD 131 – Dynamic Web Fundamentals – Ashton Faith Reil</title>
-   
-
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- Defer ensures JavaScript runs after DOM elements finish rendering -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-
     <header>
-        <p>
-            <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
-        </p>
+        <p><span id="course-title">WDD 131 – Dynamic Web Fundamentals</span></p>
         <nav>
-            <a href="https://www.linkedin.com/in/ashton-reil-4b23a3374/?isSelfProfile=true">LinkedIn</a>
-            <a href="https://byupw.instructure.com/profile">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/93?lang=eng&id=p36#p36">Scriptures</a>
+            <a href="https://www.linkedin.com/in/ashton-reil-4b23a3374/?isSelfProfile=true" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/profile" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/93?lang=eng&id=p36#p36" target="_blank" rel="noopener">Scriptures</a>
             <a href="#">Final Project</a>
         </nav>
     </header>
+    
     <main>
-         <h1>Ashton Faith Reil | WDD 131 </h1>
-      <section class="card">
-           <h2>About Me</h2>
-          
-            <div  class="card-content">
-
-                <img src="images/profile.jpeg" alt="Ashton Faith Reil" width="100px"
-                  height="200px">
-            <p>Hello! My name is Ashton Faith Reil I am from California, Usa.</p><br>
-                <p> I enjoy drawing ,music
-                and
-                dancing. I am curently studying Software Development at Byu. I am happy about all
-                the
-                thing I will do in the future .</p>
-            </div>
-            </section>
-       
-        <div class="ca">
-
-            <img src="images/california.jpg" alt="California, Usa" width="200px"
-              height="100px">
-            <p>California</p>
-            <p>California is a state in the Western United States. It is the most populous U.S.
-                state
-                and the third-largest by area. The state capital is Sacramento, and its largest city
-                is
-                Los Angeles. California is known for its diverse geography, which includes beaches,
-                mountains, and deserts, as well as its cultural influence in entertainment,
-                technology,
-                and agriculture.</p>
-        </div>
-
+        <h1>Ashton Faith Reil | WDD 131</h1>
+        
         <section class="card">
-        <h2>Web Dev Resources</h2>
-       <div class="card-content">
-        <ul>
-         <li><a href="https://www.w3schools.com/">W3Schools</a></li>
-         <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
-         <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li> 
-         <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
-
-        </ul>
-        </div>
+            <h2>About Me</h2>
+            <div class="card-content">
+                <img src="images/profile.jpeg" alt="Ashton Faith Reil" width="100" height="200">
+                <p>Hello! My name is Ashton Faith Reil. I am from California, USA.</p>
+                <p>I enjoy drawing, music, and dancing. I am currently studying Software Development at BYU. I am happy about all the things I will do in the future.</p>
+            </div>
         </section>
-   
-
+        
+        <!-- Fixed broken <div> tag to a proper semantic <section> with card matching class -->
+        <section class="card california-card">
+            <h2>California</h2>
+            <div class="card-content">
+                <img src="images/california.jpg" alt="California landmarks" width="200" height="100">
+                <p>California is a state in the Western United States. It is the most populous U.S. state and the third-largest by area. The state capital is Sacramento, and its largest city is Los Angeles. California is known for its diverse geography, which includes beaches, mountains, and deserts, as well as its cultural influence in entertainment, technology, and agriculture.</p>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                    <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">freeCodeCamp</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
     
-
-
-
     <footer>
-        
-        <p>
-            "©"
-            <span id="currentYear">2026</span> "|
-            🌺 Ashton Faith Reil 🌺| California, Usa
-        </p>
-        <p>
-        <span>Last Updated: 2024-06-10</span></p>
+        <p>&copy; <span id="currentYear">2026</span> | 🌺 Ashton Faith Reil 🌺 | California, USA</p>
+        <p>Last Updated: <span id="lastModified">2024-06-10</span></p>
     </footer>
 </body>
-
 </html>
