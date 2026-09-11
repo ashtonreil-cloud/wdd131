@@ -47,7 +47,7 @@ header h1 {
 }
 
 #menu.open::before {
-    content: "❌";
+    content: "X";
 }
 
 
