@@ -50,9 +50,9 @@ header h1 {
     content: "❌";
 }
 
-/* Flex Navigation */
-.navigation {
-    display: none;
+
+nav {
+    display: flex; /* Requisito directo de la tarea */
     flex-direction: column;
     width: 100%;
     position: absolute;
@@ -61,11 +61,8 @@ header h1 {
     background-color: var(--primary-color);
 }
 
-.navigation.open {
-    display: flex;
-}
-
-.navigation a {
+nav a {
+    display: none;
     color: white;
     text-decoration: none;
     padding: 1rem;
@@ -73,6 +70,15 @@ header h1 {
     transition: background-color 0.3s;
 }
 
+
+nav.open a {
+    display: block;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
 .navigation a:hover {
     background-color: var(--accent-color);
     color: var(--primary-color);
@@ -116,7 +122,6 @@ figcaption {
     font-weight: bold;
 }
 
-/* Footer */
 footer {
     background-color: var(--primary-color);
     color: white;

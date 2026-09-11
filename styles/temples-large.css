@@ -3,15 +3,15 @@
         display: none;
     }
 
-    .navigation {
-        display: flex;
+    nav {
         position: static;
         flex-direction: row;
         width: auto;
         justify-content: flex-end;
     }
 
-    .navigation a {
+    nav a {
+        display: block;
         padding: 0.5rem 1rem;
         border-radius: 4px;
     }
