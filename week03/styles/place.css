@@ -1,0 +1,147 @@
+:root {
+    --primary-color: red;
+    --secondary-color: darkgreen;
+    --accent-color: white;
+    --accent2-color: lightgray;
+    --heading-font: Arial, sans-serif;
+    --body-font: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    margin-top: 1rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero picture,
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero img {
+    height: auto;
+}
+
+.temple-info,
+.weather {
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.temple-info h2,
+.weather h2 {
+    text-align: center;
+}
+
+.temple-info p,
+.weather p {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    width: 330px;
+    max-width: 100%;
+    margin: 0.5rem auto;
+    text-align: left;
+}
+
+.temple-info p strong,
+.weather p strong {
+    text-align: right;
+    padding-right: 0.75rem;
+
+}
+
+.temple-info p span,
+.weather p span {
+    text-align: left;
+}
+
+.weather img {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    text-align: center;
+}
+@media screen and (min-width: 700px) {
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero picture,
+    .hero img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .temple-info,
+    .weather {
+        position: absolute;
+        width: 300px;
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 5px;
+
+    }
+
+    .temple-info h2,
+    .weather h2 {
+        background-color: var(--secondary-color);
+        color: var(--accent-color);
+        padding: 1rem;
+        margin: -1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .temple-info p,
+    .weather p {
+        margin: 0.5rem 0;
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        text-align: left;
+
+    }
+
+    .temple-info {
+        top: 200px;
+        left: 20px;
+    }
+
+    .weather {
+        top: 200px;
+        right: 20px;
+    }
+
+    .weather h2::after {
+        content: "🌤️";
+        margin-left: 40px;
+    }
+
+    .weather img {
+        display: none;
+    }
+}
