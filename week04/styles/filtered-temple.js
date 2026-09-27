@@ -77,8 +77,8 @@ document.getElementById('lastModified').textContent = `Last Modification: ${docu
    },
 
    {
-    templeName: "Salt Lake Temple"
-    location: "50 W North Temple St salt Lake City, Utah  84150-9709 dUnited States
+    templeName: "Salt Lake Temple",
+    location: "50 W North Temple St salt Lake City, Utah  84150-9709 dUnited States",
     dedicated: "11 June 2000 by Gordon B. Hinckley",
     area: 10700,
     imageUrl:
