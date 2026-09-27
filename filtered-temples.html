@@ -11,15 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temple_large.css">
 
-    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/filtered-temple.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
-        <button id="menu" aria-label="Toggle Menu"></button>
+        <button id="menu" aria-label="Toggle Menu" aria-expanded="false"></button>
         <nav class="navigation">
             <a href="#">Home</a>
             <a href="#">Old</a>
@@ -30,17 +30,13 @@
     </header>
 
     <main>
-        <h2>Featured Temples</h2>
-        <div class="res-grid">
-
-
-            
-        </div>
+      
     </main>
-
+    <h2 id="heading-title">Home</h2>
+    <div class="res-grid"></div>
     <footer>
         <p>&copy; <span id="currentyear"></span> | Ashton Reil | California - Chile</p>
         <p id="lastModified"></p>
     </footer>
 </body>
-</html
+</html>
