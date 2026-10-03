@@ -1,0 +1,145 @@
+    form {
+    width: 100%;
+    background-color: var(--Neutral);
+}
+
+.required:after {
+    content: " *";
+    font-weight: bold;
+}
+
+.product, .rating, .stars {
+    margin-left: 9px;
+}
+
+label {
+    display: block;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.product{
+    margin-right: 1rem;
+}
+
+div {
+    margin: 1rem;
+}
+
+#product option {
+    background-color: var(--Primary-Color);
+    color: var(--White-Text);
+}
+
+.review input[type="radio"], .review input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.review input[type="text"], .review input[type="email"], .review input[type="date"], .review #product, .review input[type="textarea"] {
+    background-color: var(--White-Text);
+    display: block;
+    border: 1px solid var(--Primary-Color);
+    border-radius: 6px;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 350px;
+}
+
+.review label {
+    display: block;
+}
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: var(--caret-color);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: var(--Primary-Color);
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: var(--caret-color);
+}
+
+.stars > label:hover {
+	color: var(--Primary-Color);
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+
+.review input[type="submit"] {
+    padding: 0.8rem;
+    color: var(--Primary-Color);
+    border: none;
+    border-radius: 6px;
+    max-width: 400px;
+    box-shadow: 1px 2px 4px var(--Primary-Color);
+    margin: 0 0 1rem 3rem;
+}
+
+.para {
+    padding: 1rem;
+    background-color: var(--Accent-Color);
+    text-align: center;
+    color: var(--White-Text);
+}
+
+.confirm {
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: var(--Primary-Color);
+    color: var(--White-Text);
+    text-align: center;
+}
+
+@media (min-width: 840px) {
+    * {
+        max-width: 100%;
+        font-family: sans-serif;
+    }
+
+    form {
+        max-width: 400px;
+        background-color: var(--Accent-Color);
+        color: var(--White-Text);
+        border-radius: 3px;
+    }
+
+    body {
+        background-color: var(--Neutral);
+    }
+
+    .para {
+        background-color: var(--Accent-Color);
+        max-width: 400px;
+        border-radius: 6px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: var(--White-Text);
+    }
+    
+    .stars > label {
+        color: var(--White-Text);
+        caret-color: var(--caret-color);
+    }
+}

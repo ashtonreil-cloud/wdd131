@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="WDD 131 – Product Review Form for users to submit feedback about products and services.">
+    <meta name="author" content="Ashton Faith Reil">S
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="review">
+            <label for="product" class="product">Product Names <span class="required"></span></label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+            <label for="stars" class="rating">Overall Rating <span class="required"></span></label>
+            <section class="stars">
+                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+            </section>
+            <div>
+                <label for="installation">Date of installation</label>
+                <input type="date" id="installation" name="installation" required>
+            </div>
+            <div>Which features did you find useful in the product? (Check all that apply)
+                <label for="durability"><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                <label for="ease"><input type="checkbox" id="ease" name="ease" value="yes">Ease of Use</label>
+                <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                <label for="design"><input type="checkbox" id="design" name="design" value="yes">Design</label>
+            </div>
+            <div>
+                <label for="review">Written Review (optional)</label>
+                <textarea id="review" name="review" rows="3" cols="50"></textarea>
+            </div>
+            <div>
+                <label for="fullname">Your Name (optional)</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe">
+            </div>
+          <label><input type="submit" name="post-review" value="Post Review" id="post-review"></label>
+        </form>
+        <p class="para"><span class="label">Number of Visits: </span><span class="visits"></span></p>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🌸 Ashton Faith Reil 🌸 California</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>
