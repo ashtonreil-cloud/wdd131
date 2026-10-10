@@ -39,8 +39,8 @@ h2 {
 }
 
 h1:not(.hero) {
-    background-color: rgb(49, 42, 40);
-    color: white;
+    background-color: rgb(3, 62, 37);
+    color: rgb(154, 201, 33);
     padding: 16px;
     text-align: center;
 }
@@ -51,7 +51,7 @@ h2 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: #FFFD91;
+    background-color: #54520c;
     color: var(--accent2-color);
 }
 
@@ -86,12 +86,12 @@ header > nav:not(#options) a {
 
 img {
     border: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
 }
 
 main img {
     width: 200px;
-    border: 1px solid rgb(133, 133, 195);
+    border: 1px solid rgb(1, 1, 6);
     padding: 2px;
     box-shadow: 0 0 30px #000000;
 }
@@ -134,12 +134,12 @@ h1.hero {
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
-    color: #061c0f;
+    color: #042f16;
 }
 
 .hero h1 {
     position: absolute;
-}
+}s
 
 .happyrafter {
     height: 20px;
@@ -147,7 +147,7 @@ h1.hero {
 
 #articulo {
     margin: 5%;
-    background-color: #fff9fe;
+    background-color: #632859;
     height: 120px;
 }
 
@@ -174,7 +174,7 @@ section {
 .flex-container {
     width: 100%;
     display: flex;
-    border: 1px solid #28647c;
+    border: 1px solid #01090c;
     border-radius: 4px;
     flex-direction: row;
     gap: 10px;
@@ -202,7 +202,7 @@ section {
     width: 100%;
     margin-left: 20%;
     margin-right: 20%;
-    border: 2px solid black;
+    border: 2px solid rgb(7, 52, 13);
     border-radius: 4px;
     overflow: hidden;
     align-self: center !important;
@@ -343,7 +343,7 @@ textarea.inputs.message {
 .button button {
     padding: 10px 20px;
     background-color: black;
-    color: white;
+    color: rgb(112, 0, 0);
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -361,7 +361,7 @@ textarea.inputs.message {
 }
 
 .bottom-elements {
-    border: 2px solid black;
+    border: 2px solid rgb(171, 40, 40);
     margin-top: 10%;
     text-align: center;
 }
@@ -383,7 +383,7 @@ aside {
     margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1em;
-    background-color: pink;
+    background-color: rgb(130, 2, 23);
     color: #000000;
     text-align: center;
 }
