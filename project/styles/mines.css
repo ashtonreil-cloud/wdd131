@@ -75,7 +75,7 @@ h2 {
     border-radius: 4px;
     overflow: hidden;
 
-    /* Reseteo forzado de altura */
+
     align-self: center !important;
     height: fit-content !important;
 }
@@ -115,7 +115,7 @@ iframe {
     float: left;
 }
 
-/* Contenedor general del formulario */
+
 .Questions {
     display: flex;
     flex-direction: column;
@@ -124,7 +124,7 @@ iframe {
     margin-left: 30%;
 }
 
-/* CADA FILA (Label a la izquierda + Input a la derecha) */
+
 .form-group {
     display: flex;
     flex-direction: row;
@@ -133,12 +133,12 @@ iframe {
     width: 100%;
 }
 
-/* Para que la caja de texto del mensaje se alinee arriba con su etiqueta */
+
 .form-group.textarea-group {
     align-items: flex-start;
 }
 
-/* LABELS: Todos miden exacto 110px para que los inputs empiecen en la misma línea */
+
 .form-group label {
     width: 110px;
     min-width: 110px;
@@ -146,7 +146,7 @@ iframe {
     font-weight: bold;
 }
 
-/* INPUTS DE TEXTO Y EMAIL: Mismo ancho y alto exactos */
+
 .inputs {
     border: 2px solid black;
     height: 35px;
@@ -154,7 +154,7 @@ iframe {
     padding: 5px 10px;
 }
 
-/* SECCIÓN RADIO BUTTONS Y CHECKBOX */
+
 .p1 {
     font-weight: bold;
     margin: 0 0 8px 0;
@@ -180,7 +180,7 @@ iframe {
     float: left;
 }
 
-/* TEXTAREA DE MENSAJE */
+
 textarea.inputs.message {
     height: 100px;
     width: 280px;
@@ -194,7 +194,7 @@ textarea.inputs.message {
     margin-top: 5px;
 }
 
-/* BOTÓN */
+
 .button {
     margin-left: 30%;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inquiry form and past submission tracker for Webkinz Gems and Rafting site.">
+    <meta name="author" content="Ashton Faith Reil">
+    <title>Questions</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="flex-container">
+            <img src="images/webkinz.png" id="logo" alt="Webkinz Logo" loading="lazy">
+            <nav id="options">
+                <div class="link-box">
+                    <div><a href="siteplan.html">Home</a></div>
+                    <div><a href="questions.html">Questions</a></div>
+                    <div><a href="mines.html">The Mines</a></div>
+                    <div><a href="gems.html">Gems</a></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-card">
+            <h1>Send an Inquiry</h1>
+            
+            <form id="inquiryForm" novalidate>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Jane Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="userEmail">Email Address:</label>
+                    <input type="email" id="userEmail" name="userEmail" required placeholder="jane@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="inquiryType">Category:</label>
+                    <select id="inquiryType" name="inquiryType" required>
+                        <option value="">-- Select Category --</option>
+                        <option value="General">General Inquiry</option>
+                        <option value="Gems">Gem Trade Strategy</option>
+                        <option value="Reservation">Reservation Question</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="userMessage">Message:</label>
+                    <textarea id="userMessage" name="userMessage" rows="4" required minlength="10" placeholder="Type your message here..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Subscribe to newsletter updates</label>
+                </div>
+
+                <div id="statusMessage" class="status-box" aria-live="polite"></div>
+
+                <button type="submit" id="submitBtn">Submit Inquiry</button>
+            </form>
+        </section>
+
+        <section class="submissions-card">
+            <h2>Your Saved Inquiries</h2>
+            <div class="actions-bar">
+                <button type="button" id="clearBtn" class="btn-secondary">Clear Saved History</button>
+            </div>
+            <div id="submissionsContainer">
+              
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ashton Faith Reil | WDD 131 Course Project</p>
+    </footer>
+</body>
+
+</html>
