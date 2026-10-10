@@ -43,37 +43,6 @@ h2 {
     text-align: center;
     align-items: center;
 }
-
-#options {
-    text-align: left;
-}
-
-
-
-img {
-    height: 100px;
-    width: 200px;
-    align-self: flex-start;
-}
-
-iframe {
-    padding: 10px;
-    align-items: flex-start;
-    height: 200px;
-    width: 200px;
-    float: left;
-}
-
-
-.Questions {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    margin-left: 30%;
-}
-
-
 .form-group {
     display: flex;
     flex-direction: row;
@@ -103,7 +72,7 @@ iframe {
     padding: 5px 10px;
 }
 
-
+/* SECCIÓN RADIO BUTTONS Y CHECKBOX */
 .p1 {
     font-weight: bold;
     margin: 0 0 8px 0;
